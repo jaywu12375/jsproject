@@ -14,8 +14,12 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(25);
   strokeWeight(3);
+
+  //object rotates with mouse
+  rotateY(map(mouseX, 100, width, 0, PI));
+  rotateX(map(mouseY, 100, height, 0, PI));
 
   //text
   textSize(15);
